@@ -100,6 +100,28 @@ A promo code is **valid** if:
 
 Because Node.js cannot process 300M+ lines in memory, I used a **parallelized shell script** to preprocess the datasets efficiently.
 
+Preprocessing the large `couponbase*.gz` files is required before running the API.
+
+## Place the raw files here
+
+The three files:
+
+- `couponbase1.gz`
+- `couponbase2.gz`
+- `couponbase3.gz`
+
+must be placed inside:
+
+```sql
+Your folder should look like:
+
+src/data/
+  products.json
+  couponbase1.gz
+  couponbase2.gz
+  couponbase3.gz
+```
+
 ## Run preprocessing
 
 ```bash
