@@ -135,5 +135,8 @@ backend-challenge/node-backend/src/data/unique2.txt
 backend-challenge/node-backend/src/data/unique3.txt
 backend-challenge/node-backend/src/data/valid_promos.txt
 
+# Ignore gzip data files if needed (optional)
+backend-challenge/node-backend/src/data/*.gz
+
 # Temp directories used by preprocess script
 /tmp/coupon_sort_tmp/
